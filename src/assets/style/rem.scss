@@ -1,0 +1,20 @@
+/**
+ * 响应式尺寸rem方案
+ */
+@import './varieties';
+
+@function px2rem($px) {
+  @return $px / ($design_width / 10) * 1rem;
+}
+
+@function rem2px ($rem) {
+  @return $rem * ($design_width / 10) * 1px;
+}
+
+@function px2vh ($px) {
+  @return $px / $design_height * 100vh;
+}
+
+@function px2vw ($px) {
+  @return $px / $design_width * 100vw;
+}
